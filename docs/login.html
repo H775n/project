@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../css/style-project.css">
+
+    <title>LOGIN</title>
+    <script>
+      function submitForm() {
+          // Perform validation here
+          
+          // Display success message
+          alert("Thanks for the communication!");
+      }
+  </script>
+  </head>
+  <body>
+   <!-- nav -->
+   <ul>
+    <li><a style="float:left"  class="active" href="../index.html">HOME</a></li>
+    <li><a  href="../docs/service.html">service</a></li>
+    <li><a href="../docs/abot.html">About</a></li>
+    <li style="float:right"><a href="../docs/login.html">login</a></li>
+  </ul>
+    <br><br><br>
+
+<br> 
+
+
+<h1>  A Table With a data Entry form   </h1>
+    <form id="dataForm">
+        <label class="label" for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+       
+        <label class="label" for="email"> Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+       
+        <label class="label" for="phone">Phone :</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+       
+        <button type="submit">submit</button>
+    </form>
+   
+    <table id="dataTable">
+        <thead>
+            <tr class="tr">
+                <th class="th">Name</th>
+                <th class="th">Email </th>
+                <th class="th">Phone</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+      // هذا الدالة تقوم بمنع ارسال النموذج عند الضغط على زر الارسال 
+        document.getElementById("dataForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+// هذا الدالة تقوم باخذ القيم المدخلة من عناصر النموذج وتخزينها في متغيرات
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+
+
+// 
+            var table = document.getElementById("dataTable").getElementsByTagName("tbody")[0];
+          //هذا الدالة تقوم باضافة سطر جديد 
+            var newRow = table.insertRow(table.rows.length);
+            // يتم استدعائها لانشاء خلية جديدة واضافتها الى الصف 
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            // يتم استدعائها للوصول الى المحتوى الذي يمكن عرضه
+            cell1.innerHTML = name;
+            cell2.innerHTML = email;
+            cell3.innerHTML = phone;
+            // هذا الدالة تقوم بمسح القيم المدخلة
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+        });</script>
+
+
+<br><br><br>
+
+<!-- شعار الموقع -->
+<footer><hr>
+  <img id="img-footer" src="../imgs/logo3.png" alt="شعار الموقع ">
+  <hr>
+  <!-- حقوق النشر -->
+  <p>&copy; 2023 zakaria alamri</p>
+  
+  </footer>
+
+   
+</body>
+</html>
+

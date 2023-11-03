@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+       <link rel="stylesheet" href="../css/style-project.css ">
+
+    <title>About Us</title>
+    <script>
+      function submitForm() {
+          // Perform validation here
+          
+          // Display success message
+          alert("Thanks for the communication!");
+      }
+  </script>
+
+    
+  
+  </head>
+  <body >
+    
+<!-- nav -->
+    <ul>
+      <li><a style="float:left"  class="active" href="../index.html">HOME</a></li>
+      <li><a  href="../docs/service.html">service</a></li>
+      <li><a href="../docs/abot.html">About</a></li>
+      <li style="float:right"><a href="../docs/login.html">login</a></li>
+    </ul>
+    
+       
+<div class="about-us">
+  <div class="content">
+    <h2>About Us</h2>
+    <p>We are a company known for providing first-class engineering services design consultancy and project management that focus on innovation achieving balance reducing cost speed of implementation and maintaining quality, and we are distinguished by using studied methodologies for projects such as early risk assessment a nd safety while reducing margins to obtain results Therefore, our company employs a team of experts in their fields, where they listen to the client with interest and know his needs and desires to ensure obtaining a final picture of an innovative and interesting project, and we implement our projects using a comprehensive methodology where all aspects are carefully reviewed, such as concepts, tasks and form. And the environment, and our only goal is to be at the forefront of companies specialized in the engineering field, and for our architectural and interior designs to compete at home and abroad, as well as to establish and maintain long-term relationships with our customers, partners and suppliers.</p>
+  </div>
+</div>
+<br>  
+<!-- هذا دالة عند الضغط على البتن يظهر ال الفرم  -->
+<button class="button" onclick="document.getElementById('contactForm').style.display='block'">Contact Us</button>
+
+<div  id="contactForm" style="display: none;">
+<h2>Contact Us</h2>
+<!-- تقوم بتشغيل الدالة التي تم تعريفها في راس الصفحة او الرساله submitForm(); تمنع اعادة تحميل الصفحة عند تقديم الرسالة  preventDefault();-->
+<form onsubmit="event.preventDefault(); submitForm();">
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" required><br><br>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+<label for="email">Password:</label><br>
+<input type="password" id="password" name="password" required><br><br>
+<label for="phone">Phone:</label><br>
+<input type="tel" id="phone" name="phone" required><br><br>
+<label for="message">Message :</label><br>
+<textarea id="message" name="message" required></textarea><br><br>
+<label for="priority">Gender:</label><br>
+<select id="priority" name="priority" required>
+  <option value="Female">Female</option>
+  <option value="Malee">`Malee</option>
+</select><br><br>
+<label for="attachment">Attachment:</label><br>
+<input type="file" id="attachment" name="attachment"><br><br>
+<input type="submit" value="Submit">
+</form>
+
+</div>
+<br><br><br>
+<br>
+          
+<!-- شعار الموقع -->
+<footer><hr>
+  <img id="img-footer" src="../imgs/logo3.png" alt="شعار الموقع ">
+  <hr>
+  <!-- حقوق النشر -->
+  <p>&copy; 2023 zakaria alamri</p>
+  
+  </footer>
+
+          
+
+    </body>
+</html>
+   

@@ -1,0 +1,292 @@
+body{
+  background-color: #3e3e3e;
+  color: aliceblue;
+}
+
+/* nav هذا حق   */
+ul {
+  position: fixed ;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+  color: #ccc;
+}
+.active {
+
+  background-color: #4CAF50;
+}
+
+/* الذي طلبتهن الدكتورة  section  من هنا يخص الثلاثة   */
+
+.cont {
+
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  
+  border-radius: 10px;
+  background-color: rgb(43, 43, 43);
+  width: 40%;
+  padding: 5x;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+.section h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.section img {
+  margin: 2px 10px 20px 0px ;
+  align-items: center;
+  border-radius: 5px;
+  max-width: 100%;
+
+  height: auto;
+}
+
+/*   الذي طلبتهن الدكتورة section يخص التجاوب  حق       */
+@media only screen and (max-width: 600px) {
+  .cont {
+    flex-wrap: wrap;
+    
+  }
+ 
+  .section {
+    width: 100%;
+  }
+  .section img{
+    width: 87%;
+    margin: 2px 10px 20px 30px ;
+  }
+}
+
+/* abuot صفحة ال */
+
+.about-us   {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-image: url(imgs/about-img.jpg);
+  background-position: center;
+  height: 200px;
+}
+
+.about-us .content {
+  display: block;
+  background-color: rgba(151, 149, 149, 0.8);
+  margin-top: 60px;
+  margin-bottom: 50px ;
+  padding: 50px;
+  text-align: center;
+}
+
+.about-us .content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-us .content p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* about يخص التجاوب  لصفحة ال  */
+@media only screen and (max-width: 800px) {
+  .about-us {
+    height: 200px;
+  }
+  .about-us .content {
+    display: inline-block;
+    padding: 20px;
+  }
+  .about-us .content h2 {
+    font-size: 24px;
+  }
+  .about-us .content p {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 250px) {
+  .about-us   {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/about-img.jpg);
+    background-position: center;
+    height: 200px;
+  }
+  }
+
+
+/* login  ما يخص صفحة   */
+
+h1 {
+  text-align: center;
+}
+
+#dataForm {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 300px;
+  padding: 5px;
+}
+
+button[type="submit"] {
+  margin-left: 400px;
+  padding: 5px 10px;
+}
+
+#dataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.th, td {
+  border: 1px solid #202020;
+  padding: 8px;
+  text-align: center;
+}
+
+.th {
+  background-color: #393737;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  /* login  ما يخص التجاوب لصفحة   */
+  @media screen and (max-width: 455px) {
+
+    h1 {
+  text-align: center;
+}
+
+#dataForm {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 300px;
+  padding: 5px;
+}
+
+button[type="submit"] {
+  margin-left: 200px;
+  padding: 5px 10px;
+}
+
+#dataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.th, td {
+  border: 1px solid #202020;
+  padding: 8px;
+  text-align: center;
+}
+
+.th {
+  background-color: #393737;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  }
+  
+  
+  /* تنسيق شعار الموقع */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin: 5px 5px 5px -5px ;
+}
+
+#img-footer {
+  display: block;
+ justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+margin-right: auto; 
+}
+
+/* footer تنسيق حقوق النشر او ال  */
+footer p {
+ 
+
+  text-align: center;
+  font-size: 14px;
+   padding: 20px;
+  background: #3e3e3e;
+  margin-top: 20px;
+}
